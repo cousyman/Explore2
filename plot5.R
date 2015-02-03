@@ -27,7 +27,8 @@ data <- data.frame(data)
 #Create the plot
 plot5 <- ggplot(data, aes(year, mvbalemissions))+
   geom_point()+
-  geom_line()
+  geom_line()+
+  labs(title='Motor Vehicle Emissions in Baltimore',x='Year',y='Emissions')
 
 #Show the plot
 plot5

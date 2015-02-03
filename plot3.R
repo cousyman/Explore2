@@ -10,6 +10,7 @@
 #to make a plot answer this question."
 
 library(ggplot2)
+library(plyr)
 
 #Load in data
 setwd("S:/Mitchell/Coursera/exdata-data-NEI_data")
@@ -26,7 +27,8 @@ colnames(test)[3] <- 'Emissions'
 #Create the plot
 plot3 <- ggplot(test, aes(year, Emissions)) +
   geom_point(aes(color=type)) + 
-  geom_line(aes(color=type),lwd=1)
+  geom_line(aes(color=type),lwd=1)+
+  labs(title='Four Sources of Emissions in Baltimore')
 
 #Show the plot
 plot3

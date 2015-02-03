@@ -27,7 +27,8 @@ data <- data.frame(data)
 #Create the plot
 plot4 <- ggplot(data, aes(year, coalcombemissions)) + 
   geom_point() +
-  geom_line()
+  geom_line()+
+  labs(title='Coal Combustion Related Emissions',x='Year',y='Emissions')
 
 #Show the plot
 plot4

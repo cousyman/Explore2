@@ -35,7 +35,8 @@ data <- data.frame(data)
 plot6 <- ggplot(data,aes(year, mvlaemissions)) +
   geom_point() + 
   geom_line() + 
-  geom_line(data=data,aes(year, mvbalemissions),color='red')
+  geom_line(data=data,aes(year, mvbalemissions),color='red')+
+  labs(title='Motor Vehicle Emissions in Baltimore vs LA',x='Year',y='Emissions')
 
 #Show the plot
 plot6
